@@ -1,27 +1,12 @@
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.10)
+project(querybuilder)
 
-project(my_project LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 17)
+set(LIB_ALIAS isiran::querybuilder)
 
-set(CMAKE_INCLUDE_CURRENT_DIR ON)
+# Build the example
+add_subdirectory(src)
+add_subdirectory(example)
+# add_subdirectory(test)
 
 
-set(CMAKE_CXX_STANDARD 11)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
-
-#-------------------------------------
-# Add submodules
-#-------------------------------------
-add_subdirectory(querybuilder)
-add_subdirectory(wrapper)
-
-#-------------------------------------
-# Main executable
-#-------------------------------------
-add_executable(my_project
-  main.cpp
-)
-target_link_libraries(my_project
-    PRIVATE
-            querybuilder
-
-    )

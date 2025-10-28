@@ -1,5 +1,5 @@
 #include <iostream>
-#include "wrapper/QueryBuilderWrapper.h"
+#include "query_builder_wrapper.h"
 
 int main() {
     QueryBuilderWrapper wrapper;

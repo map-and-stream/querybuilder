@@ -1,7 +1,6 @@
 #pragma once
 #include <string>
-#include <nlohmann/json.hpp>
-#include "../querybuilder/QueryBuilder.h"
+#include "query_builder.h"
 
 class QueryBuilderWrapper {
 public:
