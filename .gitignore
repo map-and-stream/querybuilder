@@ -1,0 +1,9 @@
+# Ignore build directory
+build/
+output/
+exmaple/build
+test/build
+*.exe
+CMakeLists.txt.user
+.cache
+
