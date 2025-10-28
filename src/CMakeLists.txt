@@ -9,12 +9,12 @@ query_builder_wrapper.cpp
 set(QUERYBUILDER_HEADERS
 query_builder.h
 my_project.h
-query_builder_wrapper.cpp
+query_builder_wrapper.h
 )
 
 #add_subdirectory(third-party/spdlog)
 
-add_library(${LIBRARY_NAME} STATIC ${querybuilder_SOURCES})
+add_library(${LIBRARY_NAME} STATIC ${QUERYBUILDER_SOURCES})
 
 #define public in order we cane use library in test folder
 # target_link_libraries(${LIBRARY_NAME} PUBLIC spdlog::spdlog)

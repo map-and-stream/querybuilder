@@ -1,4 +1,4 @@
-#include "QueryBuilder.h"
+#include "query_builder.h"
 #include <sstream>
 
 QueryBuilder& QueryBuilder::select(const std::vector<std::string>& fields) {
