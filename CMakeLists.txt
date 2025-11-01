@@ -7,6 +7,7 @@ set(LIB_ALIAS isiran::querybuilder)
 # Build the example
 add_subdirectory(src)
 add_subdirectory(example)
-# add_subdirectory(test)
+add_subdirectory(test)
+
 
 

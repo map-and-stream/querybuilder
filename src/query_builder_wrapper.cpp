@@ -1,4 +1,7 @@
 #include "query_builder_wrapper.h"
+#include "nlohmann/json.hpp"
+
+
 
 std::string QueryBuilderWrapper::buildQueryJson(
     const std::vector<std::string>& fields,

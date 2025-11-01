@@ -22,7 +22,10 @@ add_library(${LIBRARY_NAME} STATIC ${QUERYBUILDER_SOURCES})
 # Keep headers associated with this target for IDEs, but do not propagate
 target_sources(${LIBRARY_NAME} PRIVATE ${QUERYBUILDER_HEADERS})
 
-target_include_directories(${LIBRARY_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+target_include_directories(${LIBRARY_NAME} PUBLIC
+    ${CMAKE_CURRENT_SOURCE_DIR}
+    ${CMAKE_SOURCE_DIR}/third-party
+    )
 
 # Convenient namespaced alias for downstream targets
 add_library(${LIB_ALIAS} ALIAS ${LIBRARY_NAME})
